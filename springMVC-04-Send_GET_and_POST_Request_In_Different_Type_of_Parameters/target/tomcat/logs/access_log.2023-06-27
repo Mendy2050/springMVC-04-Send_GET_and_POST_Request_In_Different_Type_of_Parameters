@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [27/Jun/2023:18:53:46 +0100] "GET /commonParam HTTP/1.1" 200 24 http-bio-80-exec-2 90
+0:0:0:0:0:0:0:1 - - [27/Jun/2023:18:56:25 +0100] "GET /commonParam?name=itcast HTTP/1.1" 200 24 http-bio-80-exec-2 328
+0:0:0:0:0:0:0:1 - - [27/Jun/2023:18:57:48 +0100] "GET /commonParam?name=itcast&age=15 HTTP/1.1" 200 24 http-bio-80-exec-2 143
+0:0:0:0:0:0:0:1 - - [27/Jun/2023:19:20:37 +0100] "POST /commonParam HTTP/1.1" 200 24 http-bio-80-exec-5 9
+0:0:0:0:0:0:0:1 - - [27/Jun/2023:19:21:03 +0100] "POST /commonParam HTTP/1.1" 200 24 http-bio-80-exec-6 6
+0:0:0:0:0:0:0:1 - - [27/Jun/2023:19:23:28 +0100] "POST /commonParam HTTP/1.1" 200 24 http-bio-80-exec-9 5
+0:0:0:0:0:0:0:1 - - [27/Jun/2023:19:42:22 +0100] "POST /commonParam HTTP/1.1" 200 24 http-bio-80-exec-2 268
+0:0:0:0:0:0:0:1 - - [27/Jun/2023:19:46:04 +0100] "GET /commonParam?name=%E9%BB%91%E9%A9%AC%E8%80%81%E5%A4%A7&age=15 HTTP/1.1" 200 24 http-bio-80-exec-2 121
+0:0:0:0:0:0:0:1 - - [27/Jun/2023:19:51:34 +0100] "GET /commonParam?name=%E9%BB%91%E9%A9%AC%E8%80%81%E5%A4%A7&age=15 HTTP/1.1" 200 24 http-bio-80-exec-2 246

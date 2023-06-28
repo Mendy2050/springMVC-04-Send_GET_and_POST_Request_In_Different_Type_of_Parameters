@@ -1,0 +1,35 @@
+package com.itheima.config;
+
+import org.springframework.web.filter.CharacterEncodingFilter;
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+import javax.servlet.Filter;
+
+/**
+ * @author Mendy
+ * @create 2023-06-27 18:50
+ */
+public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
+
+    protected Class<?>[] getServletConfigClasses() {
+        return new Class[]{SpringMvcConfig.class};
+    }
+    protected String[] getServletMappings() {
+        return new String[]{"/"};
+    }
+    protected Class<?>[] getRootConfigClasses() {
+        return new Class[0];
+    }
+
+
+    // handle Chinese Character Display Error
+    @Override
+    protected Filter[] getServletFilters() {
+        CharacterEncodingFilter filter = new CharacterEncodingFilter();
+        filter.setEncoding("UTF-8");
+        return new Filter[]{filter};
+    }
+
+
+}
+
